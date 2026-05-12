@@ -14,9 +14,9 @@ const stats = [
     context: "Natural-language coaching — later released as Copilot in Viva Goals",
   },
   {
-    value: "33%",
-    label: "Faster review",
-    context: "LLM data pipelines at an AI healthcare startup",
+    value: "250+",
+    label: "Customer interviews",
+    context: "Voice of Customer program — 12 usability studies driving a 4-pt NPS increase at Microsoft Viva Goals",
   },
 ];
 
@@ -25,9 +25,6 @@ export default function Home() {
     <div className="max-w-6xl mx-auto px-6">
       <section className="pt-16 sm:pt-24 pb-20 grid md:grid-cols-12 gap-x-10 gap-y-12">
         <div className="md:col-span-7">
-          <p className="text-xs uppercase tracking-[0.22em] text-[color:var(--accent)] mb-5">
-            Currently recruiting
-          </p>
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[0.95]">
             Rajat Singh.
           </h1>
@@ -35,13 +32,13 @@ export default function Home() {
             Product Manager. 5 years shipping at{" "}
             <span className="highlight">Microsoft</span> (Viva Goals →{" "}
             <span className="highlight">Copilot</span>) and an AI healthcare
-            startup. CS undergrad, MBA at{" "}
-            <span className="highlight">Foster</span>.
+            startup.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-[color:var(--muted)] max-w-2xl">
-            Currently building side projects while recruiting for product and
-            forward-deployed roles. The work below is what I&apos;ve been making
-            when I&apos;m not in class.
+          <p className="mt-3 text-base leading-relaxed text-[color:var(--muted)] max-w-2xl">
+            CS and data science from Manipal Institute of Technology · MBA at{" "}
+            <span className="highlight">UW Foster</span>. Currently building
+            side projects while recruiting for product and forward-deployed
+            roles.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <Link
@@ -91,7 +88,7 @@ export default function Home() {
       <section className="pb-24">
         <div className="flex items-baseline justify-between mb-10">
           <h2 className="font-serif text-3xl sm:text-4xl font-semibold tracking-tight">
-            Selected work
+            Projects
           </h2>
           <Link
             href="/projects"

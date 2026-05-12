@@ -32,16 +32,11 @@ export default function About() {
           <span className="highlight">Microsoft</span> (Viva Goals and the
           Copilot integration that grew out of it), at the Series-C OKR startup
           Ally.io before it was acquired by Microsoft, and at Sabre working on
-          airline scheduling. Most recently I interned at{" "}
-          <span className="highlight">Endo MD Health</span>, a Seattle
-          healthcare startup, where I built AI-driven data pipelines for
-          clinical workflows.
+          airline scheduling.
         </p>
         <p>
           My undergrad is Computer Science with a minor in Data Science from
-          Manipal (India). That background is part of why I build — I&apos;d
-          rather make a rough prototype to test a hypothesis than write a deck
-          arguing for it.
+          Manipal Institute of Technology (India).
         </p>
       </section>
 
@@ -61,10 +56,6 @@ export default function About() {
             infrastructure companies — bringing PM-grade product thinking to
             real customer deployments.
           </li>
-          <li>
-            Teams that take user research seriously and treat metrics as a
-            lagging indicator of good judgment, not a replacement for it.
-          </li>
         </ul>
       </section>
 
@@ -75,9 +66,14 @@ export default function About() {
           Outside of work
         </h2>
         <p className="text-base leading-relaxed">
-          I&apos;m a national medalist in speed skating and roller hockey, and
-          I&apos;ve been a teaching mentor for underprivileged students at an
-          NGO in India for years.
+          National medalist in speed skating and roller hockey. A sports
+          aficionado — I follow football, baseball, and hockey closely and am
+          fully immersed in Seattle sports. I play squash and swim recreationally.
+        </p>
+        <p className="mt-4 text-base leading-relaxed">
+          Music is the other obsession: I&apos;m deep into progressive house and
+          can talk for hours about it. Anjunadeep is my favorite label and I
+          have strong opinions about their catalog.
         </p>
       </section>
 

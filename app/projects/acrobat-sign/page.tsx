@@ -74,12 +74,6 @@ export default function AcrobatSign() {
       <Section title="Key decisions and tradeoffs">
         <ul className="list-disc list-outside ml-5 space-y-2">
           <li>
-            <strong>Web brief over slide deck.</strong> A deck would have
-            looked more &quot;professional&quot; but a hiring manager on mobile
-            can&apos;t skim 20 slides on a Tuesday morning. The web format lets
-            people jump straight to the part they care about.
-          </li>
-          <li>
             <strong>Public sources only.</strong> Anything internal would have
             been guesswork dressed up as data. Constraining myself to public
             feedback made the conclusions defensible.
@@ -95,8 +89,11 @@ export default function AcrobatSign() {
       <Section title="What I&apos;d do differently">
         <ul className="list-disc list-outside ml-5 space-y-1.5">
           <li>
-            Quantify pain points more rigorously (mention counts, sentiment
-            scoring) rather than relying on qualitative clustering alone
+            The biggest constraint was working from public data only — without
+            internal usage metrics or enough volume to reach statistical
+            significance on some themes, the stack-ranking is directional, not
+            definitive. Access to even a small internal dataset would sharpen
+            the prioritization significantly.
           </li>
           <li>
             Add a competitive teardown — what DocuSign / Dropbox Sign /
@@ -107,16 +104,6 @@ export default function AcrobatSign() {
             synthesized themes against lived experience
           </li>
         </ul>
-      </Section>
-
-      <Section title="What I&apos;m learning">
-        <p>
-          The hardest part of voice-of-customer work isn&apos;t collection —
-          it&apos;s ruthlessly cutting the long tail. Most pain points are
-          real but won&apos;t move the business. Producing a credible
-          stack-ranking is more an exercise in saying no than in finding new
-          signal.
-        </p>
       </Section>
     </CaseStudy>
   );
