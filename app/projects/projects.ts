@@ -17,7 +17,7 @@ export const projects: Project[] = [
     longBlurb:
       "Inputs the home stadium, that night's lineups, and historical hit angles. Outputs a per-section probability of catching a foul or home run. Built for a friend who'd never caught one in years of trying.",
     tags: ["Python", "Statcast", "Modeling"],
-    status: "In progress",
+    status: "Live",
     year: "2026",
   },
   {

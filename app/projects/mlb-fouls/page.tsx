@@ -15,11 +15,12 @@ export default function MlbFouls() {
       summary="A probability heatmap that turns a stadium map, the night's lineups, and historical hit-trajectory data into a per-section likelihood of catching a foul ball or home run."
       meta={[
         { label: "Role", value: "Solo build" },
-        { label: "Status", value: "In progress" },
+        { label: "Status", value: "Live" },
         { label: "Stack", value: "Python · Statcast" },
         { label: "Year", value: "2026" },
       ]}
-      liveNote="Live demo coming. Reach out if you'd like to see the work-in-progress."
+      liveHref="https://mlb-foul-ball-finder.vercel.app/"
+      liveLabel="Open the app"
     >
       <Section title="Problem">
         <p>
@@ -78,7 +79,6 @@ export default function MlbFouls() {
 
       <Section title="What&apos;s next">
         <ul className="list-disc list-outside ml-5 space-y-1.5">
-          <li>Ship a public web demo (highest priority)</li>
           <li>Add an interactive stadium picker with seat-level overlays</li>
           <li>
             Validate the model against the next 100 games of public foul-ball
