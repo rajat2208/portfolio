@@ -10,6 +10,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "atlas",
+    title: "Atlas — Executive Intelligence",
+    blurb:
+      "A five-agent AI system that replaces the monthly cross-functional customer review with a continuous, queryable, action-capable briefing surface for business-line leaders.",
+    longBlurb:
+      "Five specialized agents coordinate to surface hidden churn risk, cross-functional blind spots, and portfolio-level patterns that no single system would catch — with precision and recall measured against a sealed ground truth.",
+    tags: ["Multi-agent", "Claude API", "Next.js"],
+    year: "2026",
+  },
+  {
     slug: "mlb-fouls",
     title: "MLB Foul Ball Heatmap",
     blurb:
@@ -17,7 +27,6 @@ export const projects: Project[] = [
     longBlurb:
       "Inputs the home stadium, that night's lineups, and historical hit angles. Outputs a per-section probability of catching a foul or home run. Built for a friend who'd never caught one in years of trying.",
     tags: ["Python", "Statcast", "Modeling"],
-    status: "Live",
     year: "2026",
   },
   {

@@ -4,9 +4,57 @@ type Props = {
 };
 
 export function ProjectVisual({ slug, className }: Props) {
+  if (slug === "atlas") return <AtlasVisual className={className} />;
   if (slug === "mlb-fouls") return <MlbVisual className={className} />;
   if (slug === "acrobat-sign") return <AcrobatVisual className={className} />;
   return null;
+}
+
+function AtlasVisual({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 400 80"
+      preserveAspectRatio="xMidYMid slice"
+      className={className}
+      aria-hidden
+    >
+      <rect width="400" height="80" fill="#18181b" />
+      {/* Source nodes */}
+      <circle cx="55" cy="18" r="3.5" fill="#14b8a6" opacity="0.9" />
+      <circle cx="40" cy="40" r="3.5" fill="#14b8a6" opacity="0.9" />
+      <circle cx="55" cy="62" r="3.5" fill="#14b8a6" opacity="0.9" />
+      <circle cx="76" cy="10" r="2.5" fill="#14b8a6" opacity="0.5" />
+      <circle cx="76" cy="70" r="2.5" fill="#14b8a6" opacity="0.5" />
+      {/* Connection lines to center */}
+      <line x1="58" y1="18" x2="155" y2="40" stroke="#14b8a6" strokeWidth="0.7" opacity="0.35" />
+      <line x1="44" y1="40" x2="155" y2="40" stroke="#14b8a6" strokeWidth="0.7" opacity="0.35" />
+      <line x1="58" y1="62" x2="155" y2="40" stroke="#14b8a6" strokeWidth="0.7" opacity="0.35" />
+      <line x1="78" y1="10" x2="155" y2="40" stroke="#14b8a6" strokeWidth="0.5" opacity="0.2" />
+      <line x1="78" y1="70" x2="155" y2="40" stroke="#14b8a6" strokeWidth="0.5" opacity="0.2" />
+      {/* Central synthesis node */}
+      <circle cx="165" cy="40" r="13" fill="#0f766e" opacity="0.12" />
+      <circle cx="165" cy="40" r="7" fill="#0f766e" opacity="0.35" />
+      <circle cx="165" cy="40" r="3.5" fill="#14b8a6" />
+      {/* Lines from center to insight cards */}
+      <line x1="178" y1="34" x2="200" y2="23" stroke="#14b8a6" strokeWidth="0.6" opacity="0.3" />
+      <line x1="178" y1="46" x2="200" y2="57" stroke="#14b8a6" strokeWidth="0.6" opacity="0.3" />
+      {/* Insight card — risk */}
+      <rect x="200" y="10" width="88" height="26" rx="3" fill="#27272a" />
+      <rect x="210" y="18" width="48" height="1.8" rx="1" fill="#52525b" />
+      <rect x="210" y="23" width="34" height="1.5" rx="1" fill="#52525b" opacity="0.55" />
+      <circle cx="278" cy="23" r="5" fill="#dc2626" opacity="0.8" />
+      {/* Insight card — opportunity */}
+      <rect x="200" y="44" width="88" height="26" rx="3" fill="#27272a" />
+      <rect x="210" y="52" width="42" height="1.8" rx="1" fill="#52525b" />
+      <rect x="210" y="57" width="30" height="1.5" rx="1" fill="#52525b" opacity="0.55" />
+      <circle cx="278" cy="57" r="5" fill="#059669" opacity="0.8" />
+      {/* Ghost card far right */}
+      <rect x="304" y="20" width="72" height="40" rx="3" fill="#27272a" opacity="0.35" />
+      <rect x="314" y="29" width="38" height="1.5" rx="1" fill="#52525b" opacity="0.3" />
+      <rect x="314" y="35" width="28" height="1.5" rx="1" fill="#52525b" opacity="0.2" />
+      <rect x="314" y="41" width="33" height="1.5" rx="1" fill="#52525b" opacity="0.2" />
+    </svg>
+  );
 }
 
 function MlbVisual({ className }: { className?: string }) {
